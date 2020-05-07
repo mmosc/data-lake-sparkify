@@ -64,9 +64,12 @@ And below is an example of what a single activity log in 2018-11-13-events.json,
 
 ### Songs metadata
 
-#### #1: songs table
+### Dimensional Tables
+
+#### 1: songs table
 
 - songs - songs in music database
+
 | songs | | |
 |---|---|---|
 song_id | StringType | PRIMARY KEY
@@ -76,7 +79,7 @@ year | TimestampType
 duration | DoubleType
 
 
-#### #2: artists table
+#### 2: artists table
 - artists - artists in music database
 
 | artists | | |
@@ -89,7 +92,7 @@ artist_longitude | DecimalType
 
 ### User activity logs
 
-#### #3: time table
+#### 3: time table
 -  time - timestamps of records in songplays broken down into specific units
 | time | | |
 |---|---|--|
@@ -102,7 +105,7 @@ year | IntegerType
 weekday | IntegerType
 
 
-#### #4: users table
+#### 4: users table
 - users - users in the app
 
 | users | | |
@@ -113,7 +116,9 @@ last_name | StringType
 gender | StringType
 level | StringType
 
-#### #5: songsplays table
+### Fact Table
+
+#### 5: songsplays table
 - songplays - records in log data associated with song plays i.e. records with page NextSong
 
 | songplays | | |
