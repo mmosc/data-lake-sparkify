@@ -80,6 +80,7 @@ duration | DoubleType
 
 
 #### 2: artists table
+
 - artists - artists in music database
 
 | artists | | |
@@ -93,7 +94,9 @@ artist_longitude | DecimalType
 ### User activity logs
 
 #### 3: time table
+
 -  time - timestamps of records in songplays broken down into specific units
+
 | time | | |
 |---|---|--|
 start_time | TimestampType | PRIMARY KEY
